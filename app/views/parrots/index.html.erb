@@ -1,0 +1,16 @@
+<% @parrots.each do |parrot| %>
+<div>
+<h2>Name: <a href="/parrots/<%= parrot.id %>"> <%= parrot.name %> Age: <%= parrot.age %>
+  
+</a></h2>
+</div>
+<div>
+  <img src="<%= parrot.image %>">
+</div>
+<div>
+<h3> Species: <%= parrot.species %></h3>
+</div>
+
+<% end %>
+
+
